@@ -44,6 +44,7 @@ def self.cards_total(cards)
   total
   for card in cards
     total += card.value
+    #this form of concatenation does not work. String interpolation does, however
     return "You have a total of" + total
   end
   # the return total is inside the iteration, therefore will be returned once
